@@ -38,7 +38,7 @@ auto RNGoogleCastModule::getMethods() -> std::vector<Method> {
 #ifdef __cplusplus
 extern "C" {
 #endif
-RNS_EXPORT_MODULE(RNGoogleCastModule)
+RNS_EXPORT_MODULE(RNGoogleCast)
 #ifdef __cplusplus
 }
 #endif
