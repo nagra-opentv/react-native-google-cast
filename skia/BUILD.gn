@@ -17,7 +17,7 @@ config("LibRNGoogleCastModule_config") {
 
 rn_cxx_tp_component("rngooglecast") {
 
-  # RS Native module and its dependencies
+  # Native module and its dependencies
   sources = [
     "RNGoogleCastModule.h",
     "RNGoogleCastModule.cpp",
