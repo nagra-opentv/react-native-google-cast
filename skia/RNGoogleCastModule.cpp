@@ -10,7 +10,6 @@
 
 #include "RNGoogleCastModule.h"
 
-using namespace folly;
 namespace facebook {
 namespace xplat {
 
@@ -28,7 +27,7 @@ auto RNGoogleCastModule::getMethods() -> std::vector<Method> {
   return {
     Method(
     "play",
-    [] (dynamic args){
+    [] (folly::dynamic args){
       RNS_LOG_NOT_IMPL;
       return;
       }), 
