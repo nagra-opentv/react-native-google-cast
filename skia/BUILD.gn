@@ -15,7 +15,7 @@ config("LibRNGoogleCastModule_config") {
                 ]
 }
 
-rn_cxx_component("rngooglecast") {
+rn_cxx_tp_component("rngooglecast") {
 
   # RS Native module and its dependencies
   sources = [
