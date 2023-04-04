@@ -1,0 +1,35 @@
+#React Native Google Cast
+
+import("//react-native/common.gni")
+
+config("LibRNGoogleCastModule_config") {
+  cflags_cc = [ "-std=c++17"]
+  cflags_cc += [
+    "-Wno-extra-semi",
+    "-Wno-sign-compare",
+    "-Wno-header-hygiene",
+  ]
+
+  include_dirs = [ ".",
+                  "//react-native/ReactCommon/",
+                ]
+}
+
+rn_cxx_tp_component("rngooglecast") {
+
+  # Native module and its dependencies
+  sources = [
+    "RNGoogleCastModule.h",
+    "RNGoogleCastModule.cpp",
+  ]
+
+  public_configs = [ ":LibRNGoogleCastModule_config" ]
+  public_configs += [ "//build/secondary/folly:folly_config" ]
+  deps = [
+    "//folly",
+    "//skia",
+  ]
+
+  with_exceptions = true
+  with_rtti = true
+}
