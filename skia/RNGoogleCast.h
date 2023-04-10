@@ -15,9 +15,9 @@ using namespace std;
 namespace facebook {
 namespace xplat {
 
-class RNGoogleCastModule : public module::CxxModule {
+class RNGoogleCast : public module::CxxModule {
  public:
-  RNGoogleCastModule();
+  RNGoogleCast();
   std::map<std::string, folly::dynamic> getConstants() override;
   std::vector<Method> getMethods() override;
   std::string getName() override;

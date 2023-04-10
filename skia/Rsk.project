@@ -1,0 +1,12 @@
+{
+  "codegenConfig": {
+    "name": "rngooglecast",
+    "version": "3.3.0",
+    "type": "modules",
+    "skia": {
+      "TurboModuleRegistryGetEnforcingSpec" : [ 
+        "RNGoogleCast"
+      ]   
+    }   
+  }
+}
