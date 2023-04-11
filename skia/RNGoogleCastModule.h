@@ -16,11 +16,11 @@ namespace facebook {
 namespace xplat {
 
 class RNGoogleCastModule : public module::CxxModule {
-  public:
-    RNGoogleCastModule();
-    std::map<std::string, folly::dynamic> getConstants() override;
-    std::vector<Method> getMethods() override;
-    std::string getName() override;
+ public:
+  RNGoogleCastModule();
+  std::map<std::string, folly::dynamic> getConstants() override;
+  std::vector<Method> getMethods() override;
+  std::string getName() override;
 };
 
 } // xplat
