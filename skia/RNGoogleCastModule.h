@@ -15,12 +15,12 @@ using namespace std;
 namespace facebook {
 namespace xplat {
 
-class RNGoogleCast : public module::CxxModule {
- public:
-  RNGoogleCast();
-  std::map<std::string, folly::dynamic> getConstants() override;
-  std::vector<Method> getMethods() override;
-  std::string getName() override;
+class RNGoogleCastModule : public module::CxxModule {
+  public:
+    RNGoogleCastModule();
+    std::map<std::string, folly::dynamic> getConstants() override;
+    std::vector<Method> getMethods() override;
+    std::string getName() override;
 };
 
 } // xplat

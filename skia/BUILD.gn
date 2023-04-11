@@ -2,7 +2,7 @@
 
 import("//react-native/common.gni")
 
-config("LibRNGoogleCast_config") {
+config("LibRNGoogleCastModule_config") {
   cflags_cc = [ "-std=c++17"]
   cflags_cc += [
     "-Wno-extra-semi",
@@ -19,11 +19,11 @@ rns_cxx_tp_component("rngooglecast") {
 
   # Native module and its dependencies
   sources = [
-    "RNGoogleCast.h",
-    "RNGoogleCast.cpp",
+    "RNGoogleCastModule.h",
+    "RNGoogleCastModule.cpp",
   ]
 
-  public_configs = [ ":LibRNGoogleCast_config" ]
+  public_configs = [ ":LibRNGoogleCastModule_config" ]
   public_configs += [ "//build/secondary/folly:folly_config" ]
   deps = [
     "//folly",

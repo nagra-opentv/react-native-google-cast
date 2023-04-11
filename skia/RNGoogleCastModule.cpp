@@ -8,22 +8,22 @@
 #include "ReactSkia/utils/RnsLog.h"
 #include <cxxreact/JsArgumentHelpers.h>
 
-#include "RNGoogleCast.h"
+#include "RNGoogleCastModule.h"
 
 namespace facebook {
 namespace xplat {
 
-RNGoogleCast::RNGoogleCast() { }
+RNGoogleCastModule::RNGoogleCastModule() { }
 
-auto RNGoogleCast::getConstants() -> std::map<std::string, folly::dynamic> {
+auto RNGoogleCastModule::getConstants() -> std::map<std::string, folly::dynamic> {
   return {};
 }
 
-std::string RNGoogleCast::getName() {
+std::string RNGoogleCastModule::getName() {
   return "RNGoogleCast";
 }
 
-auto RNGoogleCast::getMethods() -> std::vector<Method> {
+auto RNGoogleCastModule::getMethods() -> std::vector<Method> {
   return {
     Method(
     "play",
